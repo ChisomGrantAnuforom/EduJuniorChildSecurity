@@ -1,5 +1,7 @@
 <Solution>
   <Project Path="EduJuniorChildSecurity/EduJuniorChildSecurity.Shared/EduJuniorChildSecurity.Shared.csproj" />
   <Project Path="EduJuniorChildSecurity/EduJuniorChildSecurity.Web/EduJuniorChildSecurity.Web.csproj" />
-  <Project Path="EduJuniorChildSecurity/EduJuniorChildSecurity/EduJuniorChildSecurity.csproj" />
+  <Project Path="EduJuniorChildSecurity/EduJuniorChildSecurity/EduJuniorChildSecurity.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
 </Solution>
