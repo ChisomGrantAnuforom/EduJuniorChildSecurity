@@ -6,7 +6,7 @@
 <div class="login-container">
     <div class="login-box">
         <h2>Welcome Back</h2>
-        <p>Please sign in to continue</p>
+        <p>Please Login to continue</p>
 
         <EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
             <DataAnnotationsValidator />
@@ -23,6 +23,9 @@
             </div>
 
             <button type="submit" class="btn-login">Login</button>
+            <br/>
+            <a href="Register">Not Registered? Click here to register</a>
+            
         </EditForm>
     </div>
 </div>

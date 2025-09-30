@@ -1,6 +1,8 @@
 using EduJuniorChildSecurity.Shared.Services;
 using EduJuniorChildSecurity.Web.Components;
 using EduJuniorChildSecurity.Web.Services;
+using System.Net.Http;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,8 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+
+
 // Add device-specific services used by the EduJuniorChildSecurity.Shared project
 builder.Services.AddSingleton<IFormFactor, FormFactor>();
+
+
+//for calling apis
+builder.Services.AddSingleton(new HttpClient());
 
 var app = builder.Build();
 
